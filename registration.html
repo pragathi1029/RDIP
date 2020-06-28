@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>REGISTRATION FORM</title>
+
+        <style>
+            
+            ul{
+                background-color: black;
+                list-style-type: none;
+                margin:auto;
+                padding: 0;
+                color:white;
+                overflow: hidden;
+                border: 1px solid #e7e7e7;
+            }
+
+            #logo{
+                height:100px;
+                width:180px;
+                padding:20px;
+            }
+            
+            #rdip{
+                float:right;
+                font-size: 30px;
+                padding:50px;
+            }
+
+            li{
+                float:left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            table,th,td{
+                font-weight: 800;
+                text-align: center;
+                padding : 10px;
+            }
+
+            input[type=text], input[type=number], input[type=email] {
+                padding: 8px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid black;
+                border-radius: 4px;
+                width:220px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <a href="https://www.iiit.ac.in/"><img id="logo" src="https://www.iiit.ac.in/img/iiit-new.png"></a>
+        <a id="rdip" href="https://serc.iiit.ac.in/rdip">RDIP</a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="registration.html">Registeration Form</a></li>
+        </ul>
+
+        <br>
+
+        <div>
+            <form action="details.html" method="get">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Phone No:</td>
+                    <td><input type="number" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" required>Male
+                        <input type="radio" name="gender" required>Female
+                        <input type="radio" name="gender" required>Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Reason for RDIP:</td>
+                    <td>
+                        <input type="checkbox" name="course" required>HTML
+                        <input type="checkbox" name="course" required>CSS
+                        <input type="checkbox" name="course" required>JavaScript
+                    </td>
+                </tr>
+                <tr>
+                    <td>College:</td>
+                    <td><input type="text" name="college" required></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="declaration" required></td>
+                    <td>I declare above details given by me are true.</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Submit"></td>
+                    <td><input type="reset" name="reset" value="Reset"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+
+    </body>
+</html>
