@@ -1,0 +1,71 @@
+body{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5a8789d6e45a7c67346288d5/1520549382609-TO9COLE54YFGGFPJBQYU/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/Starfield-Stars-Universe-FlyBy-Motion-Background-Video-Loop-Sample2-1.jpg?format=2500w);
+}
+
+.container{
+    margin:auto;
+    padding:20px;
+    margin-top: 5%;
+    max-width: 1100px;
+    background-color: aliceblue;
+    text-align: center;
+    min-height: 500px;
+}
+
+.palindrome{
+    width: 500px;
+    float: left;
+}
+
+.anagram{
+    width: 500px;
+    float: right;
+}
+
+.form{
+    padding:2%;
+}
+
+.p {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+ }
+
+ .k {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+ 
+ .element:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ input[type=text]{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+ }
+
+ label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

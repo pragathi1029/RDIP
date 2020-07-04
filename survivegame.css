@@ -1,0 +1,47 @@
+body{
+    background-image : url(https://i.pinimg.com/originals/e1/11/5a/e1115afea56dcaf0c273a4f3d9fc7f3a.jpg);
+}
+
+.container{
+    margin:auto;
+    padding:20px;
+    margin-top: 5%;
+    max-width: 1100px;
+    background-color: aliceblue;
+    text-align: center;
+    min-height: 500px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:30px;
+}
+
+.object1{
+    float:left;
+    width:500px;
+}
+
+.object2{
+    float:right;
+    width:500px;
+}
+
+.check{
+    clear: both;
+    margin-left: 27%;
+    width:500px;
+}
+
+button:disabled{
+    color:white;
+    background-color: black;
+}

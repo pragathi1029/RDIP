@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+
+        <link rel="stylesheet" type="text/css" href="form.css">
+
+        <script src="myscript.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Form</h1>
+            <div class="form">
+                <form name="myform" method="GET" action="thanks.html" onsubmit="return validate()" class="form">
+                    <div class="element">
+                        <div class="p">
+                          <label for="name">Name</label>
+                        </div>
+                        <div class="k">
+                          <input type="text" id="name" name="name" placeholder="Your name..">
+                        </div>
+                      </div>
+            
+                      <div class="element">
+                        <div class="p">
+                          <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="k">
+                           <input type="number" id="phone" name="phone" length=10 placeholder="Number(10 digits)">
+                        </div>
+                      </div>
+
+                      <div class="element">
+                        <div class="p">
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="k">
+                           <input type="email" id="email" name="email" placeholder="xyz@abc.com">
+                        </div>
+                      </div>
+
+                      <div class="element">
+                        <div class="p">
+                          <label for="desc">Description</label>
+                        </div>
+                        <div class="k">
+                           <textarea name="desc" rows="10" cols="30" placeholder="Describe about yourself..."></textarea>
+                        </div>
+                      </div>
+
+                      <br><br><br>
+
+                      <div>
+                        <input type="submit" value="Submit">
+                      </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

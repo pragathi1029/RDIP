@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Calculator</title>
+
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+
+        <script src="myscript.js"></script>
+
+    </head>
+
+    <body onLoad = "return calClear()">
+
+        <div class="container">
+            <h1>Calculator</h1>
+
+            <div class="caltable">
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" id="textfield"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="+" onclick="calDisplayOperator('+')" value="+">+</button>
+                        </td>
+                        <td>
+                            <button id="-" onclick="calDisplayOperator('-')" value="-">-</button>
+                        </td>
+                        <td>
+                            <button id="*" onclick="calDisplayOperator('*')" value="*">*</button>
+                        </td>
+                        <td>
+                            <button id="C" style="color: red;" onclick="calClear()">C</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="7" onclick="calDisplayNum('7')" value="7">7</button>
+                        </td>
+                        <td>
+                            <button id="8" onclick="calDisplayNum('8')" value="8">8</button>
+                        </td>
+                        <td>
+                            <button id="9" onclick="calDisplayNum('9')" value="9">9</button>
+                        </td>
+                        <td>
+                            <button id="/" onclick="calDisplayOperator('/')" value="/">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="4" onclick="calDisplayNum('4')" value="4">4</button>
+                        </td>
+                        <td>
+                            <button id="5" onclick="calDisplayNum('5')" value="5">5</button>
+                        </td>
+                        <td>
+                            <button id="6" onclick="calDisplayNum('6')" value="6">6</button>
+                        </td>
+                        <td>
+                            <button id="%" onclick="calDisplayOperator('%')" value="%">%</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="1" onclick="calDisplayNum('1')" value="1">1</button>
+                        </td>
+                        <td>
+                            <button id="2" onclick="calDisplayNum('2')" value="2">2</button>
+                        </td>
+                        <td>
+                            <button id="3" onclick="calDisplayNum('3')" value="3">3</button>
+                        </td>
+                        <td>
+                            <button id="absolute" onclick="calDisplayOperator(' mod ')" value="mod">|x|</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <button id="0" onclick="calDisplayNum('0')" value="0">0</button>
+                        </td>
+                        <td>
+                            <button id="." onclick="calDisplayDec()" value=".">.</button>
+                        </td>
+                        <td>
+                            <button id="sqroot" onclick="calDisplayOperator(' sqrt ')" value="sqrt">&radic;x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=4>
+                            <button id="=" onclick="calSolve()">=</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+
+</html>

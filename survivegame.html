@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Who Will Survive ?</title>
+
+        <link rel="stylesheet" type="text/css" href="survivegame.css"> 
+
+        <script src="myscript.js"></script>
+        
+    </head>
+    
+    <body onLoad="start()">
+        <div class="container">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">WHO WILL SURVIVE ?</h1>
+
+            <div class="object1">
+                <button id="ob1" onclick="return generateObject1()">Genrate object 1</button>
+                <p id="pob1">Click this button to generate Object 1</p>
+            </div>
+
+            <div class="object2">
+                <button id="ob2" onclick="return generateObject2()">Genrate object 2</button>
+                <p id="pob2">Click this button to generate Object 2</p>
+            </div>
+            <br><br>
+            <div class="check">
+                <button id="checker" onclick="return survival()">Check -- Who Will Survive ? </button>
+                <p id="winner">Check Here !!</p>
+            </div>
+            <div class="check">
+                <button id="clr" onclick="return clearGame()">Clear</button>
+            </div>
+        </div>
+    </body>
+</html>

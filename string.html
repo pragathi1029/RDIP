@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Validation</title>
+
+        <link rel="stylesheet" type="text/css" href="string.css">
+
+        <script src="myscript.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="palindrome">
+                <h2>Palindrome</h2>
+                <form name="myform" onsubmit="return false">
+                    <div class="element">
+                        <div class="p">
+                          <label for="word">Enter string:</sup></label>
+                        </div>
+                        <div class="k">
+                          <input type="text" id="word" name="word" placeholder="Enter String.">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Check Palindrome !" onclick="return palindrome()">
+                    </div>
+
+                    <div>
+                        <input type="reset" value="Clear" onclick="return clrPalin()">
+                    </div>
+                </form>
+
+                <p id="palin" ></p>
+
+            </div>
+
+            <div class="anagram">
+                <h2>Anagrams</h2>
+                <form name="myform1" onsubmit="return false">
+                    <div class="element">
+                        <div class="p">
+                          <label for="first">Enter 1<sup>st</sup> string:</sup></label>
+                        </div>
+                        <div class="k">
+                          <input type="text" id="first" name="first" placeholder="Enter String">
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="p">
+                          <label for="second">Enter 2<sup>nd</sup> string:</sup></label>
+                        </div>
+                        <div class="k">
+                          <input type="text" id="second" name="second" placeholder="Enter String">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Check Anagrams !" onclick="return anagram()">
+                    </div>
+                    <div>
+                        <input type="reset" value="Clear" onclick="return clrAna()">
+                    </div>
+                </form>
+
+                <p id="ana" ></p>
+
+            </div>
+        </div>
+    </body>
+
+</html>
